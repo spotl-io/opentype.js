@@ -14,6 +14,7 @@ function Path() {
     this.fill = 'black';
     this.stroke = null;
     this.strokeWidth = 1;
+    this.effect = null
     // the _layer property is only set on computed paths during glyph rendering
     // this._layers = [];
 }
@@ -544,6 +545,9 @@ Path.prototype.draw = function(ctx) {
     }
 
     if (this.fill) {
+        if (this.effect) {
+            ctx.stroke();
+        }
         ctx.fillStyle = this.fill;
         ctx.fill();
     }
