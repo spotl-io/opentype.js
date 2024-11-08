@@ -1,5 +1,5 @@
 {
-  "name": "opentype.js",
+  "name": "spotl-opentype.js",
   "description": "OpenType font parser",
   "author": {
     "name": "Frederik De Bleser",
@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/opentypejs/opentype.js.git"
+    "url": "git://github.com/spotl-io/opentype.js.git"
   },
   "main": "./dist/opentype.js",
   "browser": "./dist/opentype.js",
