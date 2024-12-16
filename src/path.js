@@ -14,6 +14,7 @@ function Path() {
     this.fill = 'black';
     this.stroke = null;
     this.strokeWidth = 1;
+    this.effect = null;
 }
 
 /**
@@ -216,6 +217,7 @@ Path.prototype.draw = function(ctx) {
     }
 
     if (this.fill) {
+        if (this.effect) ctx.stroke();
         ctx.fillStyle = this.fill;
         ctx.fill();
     }
